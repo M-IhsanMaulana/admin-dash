@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="author" content="PT. Biro Klasifikasi Indonesia">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="description" content="Selamat datang di website Admin buku tamu PT. Biro Klasifikasi Indonesia">
+	<meta name="keywords" content="PT. Biro Klasifikasi Indonesia">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="./assets/image/logobki.png" type="image/x-icon">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Title -->
+	<title>Admin &dash; PT. Biro Klasifikasi Indonesia</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand logo-bki">
+            <span class="text brand-title" id="brand-data">BKI</span>
+			<img src="assets/image/logo-bki.png" alt="logo-bki" id="data-img">
+		</a>
+		<ul class="side-menu top-side">
+			<li class="active">
+				<a href="#" data-target="#dashboard-page">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#data-tamu" data-target="#data-tamu">
+					<i class='bx bxs-group'></i>
+					<span class="text">Guest Data</span>
+				</a>
+			</li>
+			<li>
+				<a href="#form-tamu" data-target="#form-tamu">
+					<i class='bx bxs-notepad'></i>
+					<span class="text">Form Guest</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="side-menu">
+			<li>
+				<a href="/logout">
+					<i class='bx bx-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="assets/image/default-user-image.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<section data-content id="dashboard-page" class="page page-active">
+				<div class="head-title">
+					<div class="left">
+						<h1>Dashboard</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Dashboard</a>
+							</li>
+							<li><i class='bx bx-chevron-right' ></i></li>
+							<li>
+								<a class="active" href="#">Home</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+	
+				<ul class="box-info">
+					<li>
+						<i class='bx bxs-group' ></i>
+						<span class="text">
+							<h3 id="guest-datas">120 Guest</h3>
+							<p>Guest Total</p>
+						</span>
+					</li>
+					<li>
+						<i class='bx bxs-calendar' ></i>
+						<span class="text">
+							<h3 id="date-now"></h3>
+							<p>Date Now</p>
+						</span>
+					</li>
+					<li>
+						<i class='bx bxs-time' ></i>
+						<span class="text">
+							<h3 id="time-now"></h3>
+							<p>Time Now</p>
+						</span>
+					</li>
+				</ul>
+
+
+				<div class="table-data">
+					<div class="order">
+						<div class="head">
+							<h3>Recent Orders</h3>
+							<i class='bx bx-search' ></i>
+							<i class='bx bx-filter' ></i>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>Tanggal</th>
+									<th>Nama</th>
+									<th>Nama Instansi</th>
+									<th>Jaminan</th>
+									<th>Keperluan</th>
+									<th>Dengan siapa</th>
+									<th>Waktu</th>
+									<th>Foto</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. </td>
+									<td>01/17/2022</td>
+									<td>Ihsan Maulana</td>
+									<td>SMKN 17 JAKARTA</td>
+									<td>KTP</td>
+									<td>Meeting</td>
+									<td>Admin</td>
+									<td>6:00 AM</td>
+									<td>gambar.jpg</td>
+								</tr>
+								<tr>
+									<td>1. </td>
+									<td>01/17/2022</td>
+									<td>Ihsan Maulana</td>
+									<td>SMKN 17 JAKARTA</td>
+									<td>KTP</td>
+									<td>Meeting</td>
+									<td>Admin</td>
+									<td>6:00 AM</td>
+									<td>gambar.jpg</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<section data-content id="data-tamu" class="page">
+				<div class="head-title">
+					<div class="left">
+						<h1>Guest Data</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#" class="active">Dashboard</a>
+							</li>
+							<li><i class='bx bx-chevron-right' ></i></li>
+							<li>
+								<a href="#">Guest Data</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-data">
+					<div class="order">
+						<div class="head">
+							<h3>List Data</h3>
+							<a href="" class="btn btn-export"><i class='bx bx-export' ></i> export</a>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>Tanggal</th>
+									<th>Nama</th>
+									<th>Nama Instansi</th>
+									<th>Jaminan</th>
+									<th>Keperluan</th>
+									<th>Dengan siapa</th>
+									<th>Waktu</th>
+									<th>Foto</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1. </td>
+									<td>01/17/2022</td>
+									<td>Ihsan Maulana</td>
+									<td>SMKN 17 JAKARTA</td>
+									<td>KTP</td>
+									<td>Meeting</td>
+									<td>Admin</td>
+									<td>6:00 AM</td>
+									<td>gambar.jpg</td>
+								</tr>
+								<tr>
+									<td>1. </td>
+									<td>01/17/2022</td>
+									<td>Ihsan Maulana</td>
+									<td>SMKN 17 JAKARTA</td>
+									<td>KTP</td>
+									<td>Meeting</td>
+									<td>Admin</td>
+									<td>6:00 AM</td>
+									<td>gambar.jpg</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<section data-content id="form-tamu" class="page">
+				<div class="head-title">
+					<div class="left">
+						<h1>Dashboard</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a class="active" href="#">Dashboard</a>
+							</li>
+							<li><i class='bx bx-chevron-right' ></i></li>
+							<li>
+								<a href="#">Add Guest Data</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-data">
+					<div class="order">
+						<div class="head">
+							<h3>Form For Adding Guest</h3>
+						</div>
+						<div class="grid">
+							<form action="" method="post">
+								<div class="form-group">
+									<label for="tanggal">Tanggal</label>
+									<input id="tanggal" type="date" class="form-control" name="tanggal" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="nama">Nama</label>
+									<input id="nama" type="text" class="form-control" name="nama" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="instansi">Nama Instansi</label>
+									<input id="instansi" type="text" class="form-control" name="instansi" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="jaminan">Jaminan</label>
+									<select class="form-control" name="jaminan" id="input-jaminan" required>
+										<option value="">-- Silahkan Pilih Opsi Jaminan  --</option>
+										<option value="ktp">KTP</option>
+										<option value="sim">SIM</option>
+										<option value="lainnya">Lainnya..</option>
+									</select>
+								</div>
+	
+								<div class="form-group">
+									<label for="keperluan">Keperluan</label>
+									<input id="keperluan" type="text" class="form-control" name="keperluan" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="with">Nama yang ingin ditemui</label>
+									<input id="with" type="text" class="form-control" name="with" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="waktu">Waktu saat ini</label>
+									<input id="waktu" type="time" class="form-control" name="waktu" required autofocus>
+								</div>
+	
+								<div class="form-group">
+									<label for="file-upload">Upload file anda</label>
+									<input type="file" id="real-file" hidden="hidden" accept="image/*" capture required>
+									<button type="button" id="custom-button" class="form-control" required><span id="custom-text"><i class='bx bxs-camera' ></i> Open Your Camera</span></button>
+								</div>
+								<div class="form-group btn-end">
+									<button type="submit" class="btn btn-sm btn-submit btn-block">
+										<i class='bx bxs-user-plus'></i> Save Data
+									</button>
+								</div>
+							</form>
+
+							<div class="display-image" id="imgPreview">
+								<img src="" alt="" class="image-preview__image">
+								<span class="image-preview__default-text">This Your Image</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<!-- Javascript Codes -->
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
